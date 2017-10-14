@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8477B8A91F92A59800C4B14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477B8A81F92A59800C4B14E /* AppDelegate.swift */; };
-		8477B8AB1F92A59800C4B14E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477B8AA1F92A59800C4B14E /* ViewController.swift */; };
 		8477B8AE1F92A59800C4B14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8477B8AC1F92A59800C4B14E /* Main.storyboard */; };
 		8477B8B01F92A59800C4B14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8477B8AF1F92A59800C4B14E /* Assets.xcassets */; };
 		8477B8B31F92A59800C4B14E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8477B8B11F92A59800C4B14E /* LaunchScreen.storyboard */; };
+		8477B8BB1F92A64800C4B14E /* ClientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477B8BA1F92A64800C4B14E /* ClientInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8477B8A51F92A59800C4B14E /* Lab-ComplexInputScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab-ComplexInputScreens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8477B8A81F92A59800C4B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8477B8AA1F92A59800C4B14E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8477B8AD1F92A59800C4B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8477B8AF1F92A59800C4B14E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8477B8B21F92A59800C4B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8477B8B41F92A59800C4B14E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8477B8BA1F92A64800C4B14E /* ClientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				8477B8A81F92A59800C4B14E /* AppDelegate.swift */,
-				8477B8AA1F92A59800C4B14E /* ViewController.swift */,
 				8477B8AC1F92A59800C4B14E /* Main.storyboard */,
+				8477B8BA1F92A64800C4B14E /* ClientInfo.swift */,
 				8477B8AF1F92A59800C4B14E /* Assets.xcassets */,
 				8477B8B11F92A59800C4B14E /* LaunchScreen.storyboard */,
 				8477B8B41F92A59800C4B14E /* Info.plist */,
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8477B8AB1F92A59800C4B14E /* ViewController.swift in Sources */,
+				8477B8BB1F92A64800C4B14E /* ClientInfo.swift in Sources */,
 				8477B8A91F92A59800C4B14E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +276,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Lab-ComplexInputScreens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NS.Lab-ComplexInputScreens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Lab-ComplexInputScreens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NS.Lab-ComplexInputScreens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
