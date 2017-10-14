@@ -31,6 +31,15 @@ class AddRegistrationTableViewController: UITableViewController {
 
     
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        
+        print("Done tapped")
+        print("first Name: \(firstName)")
+        print("last Name: \(lastName)")
+        print("email Name: \(email)")
     }
     
     
