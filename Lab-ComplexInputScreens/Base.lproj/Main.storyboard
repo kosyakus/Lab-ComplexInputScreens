@@ -94,6 +94,106 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="wkK-tT-mmX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="U42-QG-KXM" detailTextLabel="gVm-57-Jo3" style="IBUITableViewCellStyleValue1" id="CMA-ll-B8l">
+                                        <rect key="frame" x="0.0" y="203" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMA-ll-B8l" id="3Fp-ue-60b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Check-In Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U42-QG-KXM">
+                                                    <rect key="frame" x="16" y="12" width="110" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nov 23, 1980" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gVm-57-Jo3">
+                                                    <rect key="frame" x="257.5" y="12" width="102.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="Dsi-rt-wbE">
+                                        <rect key="frame" x="0.0" y="247" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dsi-rt-wbE" id="Xb5-bU-isx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Je0-9w-KNp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="529709148.30269802">
+                                                        <!--2017-10-14 21:25:48 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Je0-9w-KNp" firstAttribute="top" secondItem="Xb5-bU-isx" secondAttribute="top" id="E5o-ou-yGo"/>
+                                                <constraint firstItem="Je0-9w-KNp" firstAttribute="centerY" secondItem="Xb5-bU-isx" secondAttribute="centerY" id="MV4-u8-fBf"/>
+                                                <constraint firstItem="Je0-9w-KNp" firstAttribute="leading" secondItem="Xb5-bU-isx" secondAttribute="leading" id="g0q-lM-mGB"/>
+                                                <constraint firstAttribute="trailing" secondItem="Je0-9w-KNp" secondAttribute="trailing" id="pHG-2z-oND"/>
+                                                <constraint firstAttribute="bottom" secondItem="Je0-9w-KNp" secondAttribute="bottom" id="pqt-Ew-rdV"/>
+                                                <constraint firstItem="Je0-9w-KNp" firstAttribute="centerX" secondItem="Xb5-bU-isx" secondAttribute="centerX" id="seU-Bu-JIP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="jVt-Mh-NZa" detailTextLabel="kBm-ni-Wsq" style="IBUITableViewCellStyleValue1" id="aKI-dy-uEP">
+                                        <rect key="frame" x="0.0" y="463" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aKI-dy-uEP" id="w9Y-m3-VNU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jVt-Mh-NZa">
+                                                    <rect key="frame" x="16" y="12" width="124.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nov 23, 1980" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kBm-ni-Wsq">
+                                                    <rect key="frame" x="257.5" y="12" width="102.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="F9Z-IZ-mV8">
+                                        <rect key="frame" x="0.0" y="507" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F9Z-IZ-mV8" id="Z56-Xo-DWW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="DSq-oU-Wnd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="529709243.796161">
+                                                        <!--2017-10-14 21:27:23 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="DSq-oU-Wnd" secondAttribute="trailing" id="1yz-Sp-ijs"/>
+                                                <constraint firstItem="DSq-oU-Wnd" firstAttribute="centerY" secondItem="Z56-Xo-DWW" secondAttribute="centerY" id="Aj1-Qv-iA2"/>
+                                                <constraint firstItem="DSq-oU-Wnd" firstAttribute="leading" secondItem="Z56-Xo-DWW" secondAttribute="leading" id="IJi-3u-29J"/>
+                                                <constraint firstAttribute="bottom" secondItem="DSq-oU-Wnd" secondAttribute="bottom" id="Sbp-ri-Fww"/>
+                                                <constraint firstItem="DSq-oU-Wnd" firstAttribute="top" secondItem="Z56-Xo-DWW" secondAttribute="top" id="jH7-pF-WoN"/>
+                                                <constraint firstItem="DSq-oU-Wnd" firstAttribute="centerX" secondItem="Z56-Xo-DWW" secondAttribute="centerX" id="nNV-Le-kwg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="qtY-rV-rRw" id="lxR-au-iD5"/>
@@ -108,6 +208,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkInDateLabel" destination="gVm-57-Jo3" id="bgR-WJ-WHw"/>
+                        <outlet property="checkInDatePicker" destination="Je0-9w-KNp" id="uf2-Pa-4Tq"/>
+                        <outlet property="checkOutDateLabel" destination="kBm-ni-Wsq" id="Qux-XI-2QU"/>
+                        <outlet property="checkOutDatePicker" destination="DSq-oU-Wnd" id="ld2-wY-YaN"/>
                         <outlet property="emailTextField" destination="xwr-ry-1ku" id="dMK-hC-3VU"/>
                         <outlet property="firstNameTextField" destination="kMg-6u-mHy" id="SnX-YA-P2g"/>
                         <outlet property="lastNameTextField" destination="HGu-bG-8JY" id="eds-bU-80W"/>
