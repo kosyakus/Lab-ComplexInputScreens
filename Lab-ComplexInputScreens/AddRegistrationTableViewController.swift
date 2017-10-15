@@ -26,6 +26,8 @@ class AddRegistrationTableViewController: UITableViewController {
         let midnightToday = Calendar.current.startOfDay(for: Date())
         checkInDatePicker.minimumDate = midnightToday
         checkInDatePicker.date = midnightToday
+        
+        updateDateViews()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,11 +41,15 @@ class AddRegistrationTableViewController: UITableViewController {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
         let email = emailTextField.text ?? ""
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
         
         print("Done tapped")
         print("first Name: \(firstName)")
         print("last Name: \(lastName)")
-        print("email Name: \(email)")
+        print("email: \(email)")
+        print("checkIn: \(checkInDate)")
+        print("checkOut: \(checkOutDate)")
     }
     
     func updateDateViews() {
@@ -56,6 +62,14 @@ class AddRegistrationTableViewController: UITableViewController {
         checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
     }
     
+    
+    @IBAction func dateInPickerValueChanged(_ sender: UIDatePicker) {
+        updateDateViews()
+    }
+    
+    @IBAction func dateOutPickerValueChanged(_ sender: UIDatePicker) {
+        updateDateViews()
+    }
     
     // MARK: - Table view data source
 
