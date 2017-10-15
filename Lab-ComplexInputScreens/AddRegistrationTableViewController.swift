@@ -9,6 +9,20 @@
 import UIKit
 
 class AddRegistrationTableViewController: UITableViewController {
+    
+    //properties to adjust cell heights. first two store the index path of date pickers. Next two store whether the date picker will be shown and then appropriately show or hide them. Both start as not shown
+    let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
+    let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
+    var isCheckInDatePickerShown: Bool = false {
+        didSet {
+            checkInDatePicker.isHidden = !isCheckInDatePickerShown
+        }
+    }
+    var isCheckOutDatePickerShown: Bool = false {
+        didSet {
+            checkOutDatePicker.isHidden = !isCheckOutDatePickerShown
+        }
+    }
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -69,6 +83,25 @@ class AddRegistrationTableViewController: UITableViewController {
     
     @IBAction func dateOutPickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch (indexPath.section, indexPath.row) {
+        case (checkInDatePickerCellIndexPath.section, checkInDatePickerCellIndexPath.row):
+            if isCheckInDatePickerShown{
+                return 216.0
+            } else {
+                return 0.0
+            }
+        case (checkOutDatePickerCellIndexPath.section, checkOutDatePickerCellIndexPath.row):
+            if isCheckOutDatePickerShown {
+                return 216.0
+            } else {
+                return 0.0
+            }
+        default:
+            return 44.0
+        }
     }
     
     // MARK: - Table view data source
