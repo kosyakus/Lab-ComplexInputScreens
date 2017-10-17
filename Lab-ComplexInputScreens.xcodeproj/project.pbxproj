@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8401A89B1F963CC2001418E8 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A89A1F963CC2001418E8 /* SelectRoomTypeTableViewController.swift */; };
 		8477B8A91F92A59800C4B14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477B8A81F92A59800C4B14E /* AppDelegate.swift */; };
 		8477B8AE1F92A59800C4B14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8477B8AC1F92A59800C4B14E /* Main.storyboard */; };
 		8477B8B01F92A59800C4B14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8477B8AF1F92A59800C4B14E /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8401A89A1F963CC2001418E8 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
 		8477B8A51F92A59800C4B14E /* Lab-ComplexInputScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab-ComplexInputScreens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8477B8A81F92A59800C4B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8477B8AD1F92A59800C4B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,8 +60,9 @@
 			children = (
 				8477B8A81F92A59800C4B14E /* AppDelegate.swift */,
 				8477B8AC1F92A59800C4B14E /* Main.storyboard */,
-				8477B8BC1F92A8BC00C4B14E /* AddRegistrationTableViewController.swift */,
 				8477B8BA1F92A64800C4B14E /* ClientInfo.swift */,
+				8477B8BC1F92A8BC00C4B14E /* AddRegistrationTableViewController.swift */,
+				8401A89A1F963CC2001418E8 /* SelectRoomTypeTableViewController.swift */,
 				8477B8AF1F92A59800C4B14E /* Assets.xcassets */,
 				8477B8B11F92A59800C4B14E /* LaunchScreen.storyboard */,
 				8477B8B41F92A59800C4B14E /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8401A89B1F963CC2001418E8 /* SelectRoomTypeTableViewController.swift in Sources */,
 				8477B8BD1F92A8BC00C4B14E /* AddRegistrationTableViewController.swift in Sources */,
 				8477B8BB1F92A64800C4B14E /* ClientInfo.swift in Sources */,
 				8477B8A91F92A59800C4B14E /* AppDelegate.swift in Sources */,
