@@ -269,6 +269,44 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="kEr-rr-Qep">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="iJ6-p1-vLI">
+                                        <rect key="frame" x="0.0" y="883" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iJ6-p1-vLI" id="twK-EG-yH8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi (per day)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIB-cm-cEi">
+                                                    <rect key="frame" x="18" y="12.5" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL0-3I-hqL">
+                                                    <rect key="frame" x="263" y="12" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlp-Nj-zaE">
+                                                    <rect key="frame" x="316" y="7.5" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rlp-Nj-zaE" firstAttribute="leading" secondItem="mL0-3I-hqL" secondAttribute="trailing" constant="20" id="1CQ-qS-rbY"/>
+                                                <constraint firstItem="Rlp-Nj-zaE" firstAttribute="centerY" secondItem="twK-EG-yH8" secondAttribute="centerY" id="4MW-nT-vT0"/>
+                                                <constraint firstItem="rIB-cm-cEi" firstAttribute="leading" secondItem="twK-EG-yH8" secondAttribute="leadingMargin" constant="10" id="Y2P-iv-2Ib"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rIB-cm-cEi" secondAttribute="trailingMargin" id="rew-Wd-32F"/>
+                                                <constraint firstItem="mL0-3I-hqL" firstAttribute="centerY" secondItem="twK-EG-yH8" secondAttribute="centerY" id="upw-aG-IPC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rlp-Nj-zaE" secondAttribute="trailing" constant="10" id="vyt-yL-m4L"/>
+                                                <constraint firstItem="rIB-cm-cEi" firstAttribute="centerY" secondItem="twK-EG-yH8" secondAttribute="centerY" id="y3O-zY-u6e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="qtY-rV-rRw" id="lxR-au-iD5"/>
@@ -294,6 +332,7 @@
                         <outlet property="numberOfAdultsStepper" destination="Q2C-YQ-jh1" id="NFy-2Q-sQ4"/>
                         <outlet property="numberOfChildrenLabel" destination="fNb-Xj-cTc" id="qbY-lo-UjQ"/>
                         <outlet property="numberOfChildrenStepper" destination="kH0-7T-S33" id="wcA-mF-lyi"/>
+                        <outlet property="wifiSwitch" destination="Rlp-Nj-zaE" id="QMd-bb-g1f"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49h-rZ-Pvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
