@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddRegistrationTableViewController: UITableViewController {
+class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
     
     //properties to adjust cell heights. first two store the index path of date pickers. Next two store whether the date picker will be shown and then appropriately show or hide them. Both start as not shown
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
@@ -23,6 +23,9 @@ class AddRegistrationTableViewController: UITableViewController {
             checkOutDatePicker.isHidden = !isCheckOutDatePickerShown
         }
     }
+    
+    //property to hold the selected room type
+    var roomType: RoomType?
     
     
 
@@ -43,6 +46,8 @@ class AddRegistrationTableViewController: UITableViewController {
     
     @IBOutlet weak var wifiSwitch: UISwitch!
     
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +58,7 @@ class AddRegistrationTableViewController: UITableViewController {
         
         updateDateViews()
         updateNumberOfGuests()
+        updateRoomType()
     }
 
     override func didReceiveMemoryWarning() {
@@ -168,6 +174,20 @@ class AddRegistrationTableViewController: UITableViewController {
     // later
     }
     
+    //func to update the room type labels
+    func updateRoomType() {
+        if let roomType = roomType {
+            roomTypeLabel.text = roomType.name
+        } else {
+            roomTypeLabel.text = "Not Set"
+        }
+    }
+    
+    // func to confirm to protocol
+    func didSelect(roomType: RoomType) {
+        self.roomType = roomType
+        updateRoomType()
+    }
     
     // MARK: - Table view data source
 
