@@ -48,6 +48,7 @@ class AddRegistrationTableViewController: UITableViewController {
         checkInDatePicker.date = midnightToday
         
         updateDateViews()
+        updateNumberOfGuests()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,6 +64,8 @@ class AddRegistrationTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
         
         print("Done tapped")
         print("first Name: \(firstName)")
@@ -70,6 +73,8 @@ class AddRegistrationTableViewController: UITableViewController {
         print("email: \(email)")
         print("checkIn: \(checkInDate)")
         print("checkOut: \(checkOutDate)")
+        print("numberOfAdults: \(numberOfAdults)")
+        print("numberOfChildren: \(numberOfChildren)")
     }
     
     func updateDateViews() {
@@ -83,14 +88,11 @@ class AddRegistrationTableViewController: UITableViewController {
     }
     
     
-    @IBAction func dateInPickerValueChanged(_ sender: UIDatePicker) {
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
     }
     
-    @IBAction func dateOutPickerValueChanged(_ sender: UIDatePicker) {
-        updateDateViews()
-    }
-    
+   
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch (indexPath.section, indexPath.row) {
         case (checkInDatePickerCellIndexPath.section, checkInDatePickerCellIndexPath.row):
@@ -145,6 +147,17 @@ class AddRegistrationTableViewController: UITableViewController {
             break
         }
     }
+    
+    //collecting numbers
+    func updateNumberOfGuests() {
+        numberOfAdultsLabel.text = "\(Int(numberOfAdultsStepper.value))"
+        numberOfChildrenLabel.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        updateNumberOfGuests()
+    }
+    
     
     // MARK: - Table view data source
 
