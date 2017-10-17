@@ -77,6 +77,7 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         let numberOfAdults = Int(numberOfAdultsStepper.value)
         let numberOfChildren = Int(numberOfChildrenStepper.value)
         let hasWifi = wifiSwitch.isOn
+        let roomChoice = roomType?.name ?? "Not Set"
         
         print("Done tapped")
         print("first Name: \(firstName)")
@@ -87,6 +88,7 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         print("numberOfAdults: \(numberOfAdults)")
         print("numberOfChildren: \(numberOfChildren)")
         print("wifi: \(hasWifi)")
+        print("roomType: \(roomChoice)")
     }
     
     func updateDateViews() {
