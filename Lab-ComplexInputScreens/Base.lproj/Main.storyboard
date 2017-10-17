@@ -347,6 +347,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pza-5h-pGK" kind="show" identifier="SelectRoomType" id="1RQ-gF-K6H"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
