@@ -9,6 +9,8 @@
 import UIKit
 
 class SelectRoomTypeTableViewController: UITableViewController {
+    
+    var roomType: RoomType?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +36,33 @@ class SelectRoomTypeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return RoomType.all.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RoomTypeCell", for: indexPath)
 
-        // Configure the cell...
+        let roomType = RoomType.all[indexPath.row]
+        
+        cell.textLabel?.text = roomType.name
+        cell.detailTextLabel?.text = "$ \(roomType.price)"
+        
+        if roomType == self.roomType {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
 
         return cell
     }
-    */
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        roomType = RoomType.all[indexPath.row]
+        tableView.reloadData()
+    }
 
     /*
     // Override to support conditional editing of the table view.
